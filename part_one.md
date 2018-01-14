@@ -131,8 +131,6 @@ console.log('\u0041\n\/')
 String.raw`\u0041\n\/` // \u0041\n\/
 
 
-
-
 ```
 
 
@@ -141,15 +139,17 @@ String.raw`\u0041\n\/` // \u0041\n\/
 
 ### Array
 
-- Array iteration with for...of
-- Array.from()
-- Array.of()
-- Array.prototype.fill()
+- Array iteration with for...of - the generic iterator
+- Array.from() - convert array-like to array for access to its prototype methods
+- Array.of() - Array.of(element0[, element1[, ...[, elementN]]])
+- Array.prototype.fill() - arr.fill(value[, start[, end]])
 - Array.prototype.find(), Array.prototype.findIndex()
 - Array.prototype.entries(),
 - Array.prototype.keys()
 - Array.prototype.copyWithin()
 
+#### Challenge
+- create array
 
 ### Object
 
@@ -191,14 +191,14 @@ const multilineScope = p => {
   const f = p[0]
   return f + 'ee'
 }
-console.log(multilineScope('fee')) // foo
+console.log(multilineScope('foo')) // fee
 
 // brackets!
 const multiparamMultiline = (p1, p2) => {
   const f = p[0]
   return f + 'ee' + p2
 }
-console.log(multilineScope('fee', 'bar')) // feebar
+console.log(multiparamMultiline('foo', 'bar')) // feebar
 // brackets!
 
 const fnWrapping = fn1_p => fn2_p => fn1_p + fn2_p
@@ -218,7 +218,8 @@ console.log(fnWrappingClassical('foo')('bar')) // foobar
 - reduces code
 - facilitates Fn programming
   - curry
-
+    - configuration for modules, `const configed_mod = require(a_module)(its_configurations)`
+    - deferred executions - a lecture in itself
 ### tradeoffs
 - reading and writing arrow functions take practice
 
@@ -307,6 +308,7 @@ console.log(obj.handler('tic')) // tictoc
 ### tradeoffs
 
 Overriding can break presumptions
+
 ```js
 
 const obj_native = new Object()
