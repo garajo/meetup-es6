@@ -159,6 +159,13 @@ String.raw`\u0041\n\/` // \u0041\n\/
 - Object.assign()
   - Object.getOwnPropertySymbols()
 
+## shorthand property names (Firefox 33) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Property_definitions
+
+## computed property names (Firefox 34) https://developer.mozilla.org/en-US/Firefox/Releases/34
+
+## shorthand method names (Firefox 34) https://developer.mozilla.org/en-US/Firefox/Releases/34
+
+
 ### RegExp
 
 - RegExp sticky (y) flag
@@ -170,6 +177,7 @@ String.raw`\u0041\n\/` // \u0041\n\/
 
   - get RegExp[@@species]
   - RegExp unicode (u) flag
+
 
 
 ## arrow functions
@@ -421,8 +429,3 @@ console.log(tagged_template_literal_2) // A monkey sadly cries in the jungle
 ### example
 
 ### use cases
-
-
-## shorthand property names (Firefox 33) https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Property_definitions
-## computed property names (Firefox 34) https://developer.mozilla.org/en-US/Firefox/Releases/34
-## shorthand method names (Firefox 34) https://developer.mozilla.org/en-US/Firefox/Releases/34
